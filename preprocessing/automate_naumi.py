@@ -37,7 +37,7 @@ def run_preprocessing():
     df_cleaned['loan_status'] = y.values
 
     # 6. Menyimpan Data Bersih
-    output_dir = '../namadataset_preprocessing'
+    output_dir = 'namadataset_preprocessing'
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, 'data_bersih.csv')
     df_cleaned.to_csv(output_path, index=False)
